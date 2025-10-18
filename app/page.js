@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="max-h-screen min-h-screen flex flex-col items-center justify-center text-center bg-gray-200">
+    <div className="max-h-screen min-h-screen flex flex-col items-center justify-center text-center bg-amber-50">
       <div className="space-y-8 max-w-5xl">
-        <h1 className="text-7xl font-bold bg-gradient-to-r from-blue-500 to-red-600 bg-clip-text text-transparent">
+        <h1 className="text-7xl font-bold bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
           Welcome To XFLAG
         </h1>
 
