@@ -2,14 +2,15 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="max-h-screen min-h-screen flex flex-col items-center justify-center text-center" style={{ backgroundColor: '#f8f3eeff' }}>
+    <div className="max-h-screen min-h-screen flex flex-col items-center justify-center text-center">
       <div className="space-y-8 max-w-5xl">
-        <h1 className="text-7xl font-bold bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
+        <h1 className="text-7xl font-bold bg-gradient-to-r from-blue-400 to-red-600 bg-clip-text text-transparent">
           Welcome To XFLAG
         </h1>
 
-        <p className="text-2xl text-gray-700">
-          Test Your CyberSec Skills And Put Them To Use Against The World!<br/>
+        <p className="text-2xl text-gray-200">
+          Test Your CyberSec Skills And Put Them To Use Against The World!
+          <br />
           Compete Worldwide, Capture Flags, Climb The LeaderBoards And Become An
           Expert.
         </p>
@@ -30,7 +31,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-8 mt-20 max-w-5xl text-black">
+      <div className="grid md:grid-cols-3 gap-8 mt-20 max-w-5xl text-white">
         <FeatureCard
           title="Sequential Challenges"
           description="Unlock challenges progressively as you solve them"
@@ -53,10 +54,10 @@ export default function Home() {
 
 function FeatureCard({ title, description, icon }) {
   return (
-    <div className="bg-black-900 p-6 rounded-lg border border-gray-900 hover:border-blue-500 transition transform hover:scale-105">
+    <div className="p-6 rounded-lg border-5 border-gray-100 hover:border-red-500 transition transform hover:scale-105">
       <div className="text-4xl mb-4">{icon}</div>
       <h3 className="text-xl font-bold mb-2">{title}</h3>
-      <p className="text-grey-500">{description}</p>
+      <p>{description}</p>
     </div>
   );
 }
