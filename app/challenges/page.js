@@ -73,7 +73,7 @@ export default function ChallengesPage() {
         </div>
       </div>
       {/* Challenges */}
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid mb-6 md:grid-cols-2 gap-6">
         {processedChallenges.map((challenge) => (
           <ChallengeCard
             key={challenge.id}

@@ -27,7 +27,7 @@ export default function LeaderboardPage() {
     <div className="max-w-6xl mx-auto">
       {/* Header */}
       <div className="mb-8 text-center">
-        <h1 className="text-6xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-red-600 bg-clip-text text-transparent">
+        <h1 className="text-6xl font-bold mb-5 mt-10 bg-gradient-to-r from-blue-400 to-red-600 bg-clip-text text-transparent">
           Leaderboard
         </h1>
         <p className="text-xl text-gray-300">Top Performers in the Arena</p>
@@ -178,7 +178,7 @@ export default function LeaderboardPage() {
 
 function StatCard({ icon, label, value }) {
   return (
-    <div className="bg-gray-800 rounded-lg p-6 border border-gray-700 text-center">
+    <div className="bg-gray-800 rounded-lg mb-6 p-6 border border-gray-700 text-center">
       <div className="text-4l mb-2">{icon}</div>
       <p className="text-gray-400 text-xl mb-1">{label}</p>
       <p className="text-4xl font-bold text-white">{value}</p>
